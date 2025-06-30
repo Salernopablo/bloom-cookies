@@ -1,0 +1,22 @@
+$color-primario: #dbcbcf;
+$color-secundario: #68320e;
+$color-terciario: #c88212;
+$font-principal: 'nunito sans';
+$font-secundaria: 'carrois';
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mq-tablet{
+    @media (min-width:481px) and (max-width:1023px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media (min-width:1024px){
+        @content;
+    }
+}

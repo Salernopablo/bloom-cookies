@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "nunito sans";
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #dbcbcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  height: auto;
+  width: auto;
+}
+header img {
+  width: 150px;
+  filter: drop-shadow(3px 2px 3px);
+}
+header nav ul, header a {
+  color: #68320e;
+  display: flex;
+  gap: 1rem;
+  padding-top: 10px;
+}
+header .carrito {
+  display: flex;
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  header a {
+    font-size: 30px;
+  }
+  header img {
+    width: 200px;
+  }
+}
+
+footer {
+  background-color: #68320e;
+  color: #dbcbcf;
+}
+
+.portada {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 4px;
+}
+
+.presentacion {
+  display: grid;
+  grid-template-rows: repeat(2 1fr);
+  color: #68320e;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.presentacion h1 {
+  justify-self: center;
+  margin: 15px;
+  padding: 20px;
+  font-size: 35px;
+  color: #68320e;
+}
+.presentacion p {
+  padding: 15px;
+  border-bottom: 1px dotted #68320e;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.colecciones {
+  background-color: #dbcbcf;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr);
+}
+.colecciones p {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+.colecciones p a {
+  color: #68320e;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.colecciones img {
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+.colecciones video {
+  display: none;
+}
+
+.comprar {
+  border-top: 1px dotted #68320e;
+  border-bottom: 1px dotted #68320e;
+}
+.comprar p {
+  text-align: center;
+  padding-top: 15px;
+}
+.comprar a {
+  color: #68320e;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.comprar img {
+  width: 100%;
+  padding: 30px;
+}
+
+.about {
+  background-color: #dbcbcf;
+  padding: 15px;
+}
+.about p {
+  text-align: center;
+}
+.about span {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.about span a {
+  color: #68320e;
+}
+
+/*# sourceMappingURL=style.css.map */

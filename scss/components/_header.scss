@@ -1,0 +1,37 @@
+header{ 
+    background-color:$color-primario;
+    @include flex-center;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    img{
+        width: 150px;
+        filter: drop-shadow(3px 2px 3px);
+    }
+    nav ul, a{
+        color: $color-secundario;
+        display: flex;
+        gap: 1rem;
+        padding-top: 10px;
+    }
+
+    .carrito{
+        display: flex;
+    }
+
+    @include mq-tablet{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px;
+    }
+
+    @include mq-desktop{
+        a{
+            font-size: 30px;
+        }
+        img{
+            width: 200px;
+        }
+    }
+}
