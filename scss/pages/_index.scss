@@ -12,19 +12,16 @@
     color: $color-secundario;
     font-weight:300;
     letter-spacing: 2px;
+    border-bottom: 1px dotted $color-secundario;
     h1{
         justify-self: center;
         margin: 15px;
         padding: 20px;
         font-size: 35px;
         color: $color-secundario;
-        //text-decoration: underline;
-        //text-decoration-color: $color-primario;
-        //text-decoration-thickness: 5px;
     }
     p{
         padding: 15px;
-        border-bottom: 1px dotted $color-secundario;
         text-align: center;
         margin: 0px 20px;
     }
@@ -36,9 +33,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3 1fr);
+    color: $color-secundario;
+    font-weight:300;
+    letter-spacing: 2px;
     p{
         text-align: center;
         padding: 15px 0px 15px 0px;
+        margin: 0px 20px;
         a{
             color: $color-secundario;
             font-weight: bolder;
@@ -56,14 +57,29 @@
         //width: 100%;
        // object-fit: cover;
     }
+    .variedad{
+        width: fit-content;
+        background: transparent;
+        justify-self: center;
+        padding: 5px;
+        margin-bottom: 15px;
+        border-color: $color-secundario;
+        a{
+            color: $color-secundario;
+        }
+    }
 }
 
 .comprar{
     border-top: 1px dotted $color-secundario;
     border-bottom: 1px dotted $color-secundario;
+    color: $color-secundario;
+    font-weight:300;
+    letter-spacing: 2px;
     p{
         text-align: center;
         padding-top: 15px;
+        margin: 0px 20px;
     }
     a{
         color: $color-secundario;
@@ -79,8 +95,12 @@
 .about{
     background-color: $color-primario;
     padding: 15px;
+    color: $color-secundario;
+    font-weight:300;
+    letter-spacing: 2px;
     p{
         text-align: center;
+        margin: 0px 20px;
     }
     span{
         margin-top: 10px;
