@@ -28,7 +28,7 @@
 }
 
 .colecciones{
-    background-color: $color-primario;
+    background-color: $color-terciario;
     padding-top: 15px;
     display: grid;
     grid-template-columns: 1fr;
@@ -62,15 +62,16 @@
         background: transparent;
         justify-self: center;
         padding: 5px;
-        margin-bottom: 15px;
-        border-color: $color-secundario;
-        a{
-            color: $color-secundario;
-        }
+        border: 2px solid;
+        border-radius: 10%;    
+        color: $color-secundario;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
 }
 
 .comprar{
+    display: grid;
     border-top: 1px dotted $color-secundario;
     border-bottom: 1px dotted $color-secundario;
     color: $color-secundario;
@@ -78,21 +79,31 @@
     letter-spacing: 2px;
     p{
         text-align: center;
-        padding-top: 15px;
-        margin: 0px 20px;
+        padding: 15px;
+        margin: 0px 30px;
     }
-    a{
+    .adquirir{
+        width: fit-content;
+        background: transparent;
+        justify-self: center;
+        padding: 5px;
+        border: 2px solid;
+        border-radius: 10%;    
         color: $color-secundario;
-        font-weight: bolder;
-        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
     img{
-        width: 100%;
-        padding: 30px;
+        width: fit-content;
+        height: 375px;
+        padding: 10px 30px;
+        align-self: center;
+        justify-self: center;
     }
 }
 
 .about{
+    display: grid;
     background-color: $color-primario;
     padding: 15px;
     color: $color-secundario;
@@ -101,17 +112,19 @@
     p{
         text-align: center;
         margin: 0px 20px;
+        padding: 15px;
     }
-    span{
-        margin-top: 10px;
-        display: block;
-        text-align: center;
-        font-weight: bolder;
-        font-size: 17px;
-        a{
-            color: $color-secundario;
+    .nosotros{
+        width: fit-content;
+        background: transparent;
+        justify-self: center;
+        padding: 5px;
+        border: 2px solid;
+        border-radius: 10%;    
+        color: $color-secundario;
+        font-weight: 500;
+        margin-bottom: 10px;
         }
-    }
 }
 
 @include mq-tablet{

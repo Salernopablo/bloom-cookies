@@ -26,7 +26,7 @@ img {
 }
 
 header {
-  background-color: #f6dfd6;
+  background-color: #f7d3e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,9 +64,23 @@ header .carrito {
   }
 }
 
-footer {
+footer div {
   background-color: #68320e;
-  color: #f6dfd6;
+  color: #f7d3e5;
+  display: grid;
+}
+footer div h4 {
+  justify-self: center;
+  margin: 15px;
+}
+footer div a {
+  color: #ecbb6b;
+  font-weight: bolder;
+  font-style: italic;
+  justify-self: center;
+  margin: 10px;
+  padding: 5px;
+  font-size: 20 px;
 }
 
 .portada {
@@ -99,7 +113,7 @@ footer {
 }
 
 .colecciones {
-  background-color: #f6dfd6;
+  background-color: #ecbb6b;
   padding-top: 15px;
   display: grid;
   grid-template-columns: 1fr;
@@ -132,14 +146,15 @@ footer {
   background: transparent;
   justify-self: center;
   padding: 5px;
-  margin-bottom: 15px;
-  border-color: #68320e;
-}
-.colecciones .variedad a {
+  border: 2px solid;
+  border-radius: 10%;
   color: #68320e;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .comprar {
+  display: grid;
   border-top: 1px dotted #68320e;
   border-bottom: 1px dotted #68320e;
   color: #68320e;
@@ -148,21 +163,31 @@ footer {
 }
 .comprar p {
   text-align: center;
-  padding-top: 15px;
-  margin: 0px 20px;
+  padding: 15px;
+  margin: 0px 30px;
 }
-.comprar a {
+.comprar .adquirir {
+  width: fit-content;
+  background: transparent;
+  justify-self: center;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10%;
   color: #68320e;
-  font-weight: bolder;
-  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 .comprar img {
-  width: 100%;
-  padding: 30px;
+  width: fit-content;
+  height: 375px;
+  padding: 10px 30px;
+  align-self: center;
+  justify-self: center;
 }
 
 .about {
-  background-color: #f6dfd6;
+  display: grid;
+  background-color: #f7d3e5;
   padding: 15px;
   color: #68320e;
   font-weight: 300;
@@ -171,16 +196,18 @@ footer {
 .about p {
   text-align: center;
   margin: 0px 20px;
+  padding: 15px;
 }
-.about span {
-  margin-top: 10px;
-  display: block;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 17px;
-}
-.about span a {
+.about .nosotros {
+  width: fit-content;
+  background: transparent;
+  justify-self: center;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10%;
   color: #68320e;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
