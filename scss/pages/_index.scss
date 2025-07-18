@@ -3,16 +3,15 @@
     width: 100%;
     height: auto;
     max-width: 100%;
-    margin-top: 4px;
 }
 
-.presentacion{
+.presentacion{ 
     display: grid;
     grid-template-rows: repeat(2 1fr);
     color: $color-secundario;
     font-weight:300;
     letter-spacing: 2px;
-    border-bottom: 1px dotted $color-secundario;
+    border-bottom: 2px dotted $color-secundario;
     h1{
         justify-self: center;
         margin: 15px;
@@ -21,6 +20,7 @@
         color: $color-secundario;
     }
     p{
+        font-size: 15px;
         padding: 15px;
         text-align: center;
         margin: 0px 20px;
@@ -28,7 +28,6 @@
 }
 
 .colecciones{
-    background-color: $color-terciario;
     padding-top: 15px;
     display: grid;
     grid-template-columns: 1fr;
@@ -36,6 +35,11 @@
     color: $color-secundario;
     font-weight:300;
     letter-spacing: 2px;
+    margin-bottom: 5px;
+    border-bottom: 2px dotted $color-secundario;
+    .ventana-variedad{
+        display: none;
+        }
     p{
         text-align: center;
         padding: 15px 0px 15px 0px;
@@ -47,15 +51,13 @@
         }
     }
     img{
-        padding: 10px;
+        padding: 10px 0px;
         justify-self: center;
         align-self: center;
         width: 100%;
     }
     video{
         display: none;
-        //width: 100%;
-       // object-fit: cover;
     }
     .variedad{
         width: fit-content;
@@ -72,11 +74,13 @@
 
 .comprar{
     display: grid;
-    border-top: 1px dotted $color-secundario;
-    border-bottom: 1px dotted $color-secundario;
+    border-top: 1px dotted $color-primario;
+    border-bottom: 1px dotted $color-primario;
     color: $color-secundario;
     font-weight:300;
     letter-spacing: 2px;
+    margin-bottom: 5px;
+    border-bottom: 2px dotted $color-secundario;
     p{
         text-align: center;
         padding: 15px;
@@ -94,9 +98,9 @@
         margin-bottom: 10px;
     }
     img{
-        width: fit-content;
-        height: 375px;
-        padding: 10px 30px;
+        width: auto;
+        height: fit-content;
+        padding-bottom: 10px;
         align-self: center;
         justify-self: center;
     }
@@ -104,7 +108,6 @@
 
 .about{
     display: grid;
-    background-color: $color-primario;
     padding: 15px;
     color: $color-secundario;
     font-weight:300;
@@ -128,5 +131,61 @@
 }
 
 @include mq-tablet{
+    .colecciones{
+        .ventana-variedad{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            padding: 20px;
+            .contenedor-img{
+                .hover{display: none;
+                }
+            }
+        }
+        .cookies-phone{
+            display:none;
+        }
 
+    }
+}
+
+@include mq-desktop{
+    .colecciones{
+        .cookies-phone{
+            display: none;
+        }
+    .ventana-variedad{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px;
+        .contenedor-img {
+            position: relative;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: opacity 0.4s ease;
+            }
+            .hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                z-index: 1;
+            }
+            &:hover {
+                .normal {
+                    opacity: 0;
+                    }
+                    .hover {
+                    opacity: 1;
+                    }
+                }
+            }
+        }    
+    }
 }

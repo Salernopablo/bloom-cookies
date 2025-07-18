@@ -88,7 +88,6 @@ footer div a {
   width: 100%;
   height: auto;
   max-width: 100%;
-  margin-top: 4px;
 }
 
 .presentacion {
@@ -97,7 +96,7 @@ footer div a {
   color: #68320e;
   font-weight: 300;
   letter-spacing: 2px;
-  border-bottom: 1px dotted #68320e;
+  border-bottom: 2px dotted #68320e;
 }
 .presentacion h1 {
   justify-self: center;
@@ -107,13 +106,13 @@ footer div a {
   color: #68320e;
 }
 .presentacion p {
+  font-size: 15px;
   padding: 15px;
   text-align: center;
   margin: 0px 20px;
 }
 
 .colecciones {
-  background-color: #ecbb6b;
   padding-top: 15px;
   display: grid;
   grid-template-columns: 1fr;
@@ -121,6 +120,11 @@ footer div a {
   color: #68320e;
   font-weight: 300;
   letter-spacing: 2px;
+  margin-bottom: 5px;
+  border-bottom: 2px dotted #68320e;
+}
+.colecciones .ventana-variedad {
+  display: none;
 }
 .colecciones p {
   text-align: center;
@@ -133,7 +137,7 @@ footer div a {
   font-size: 17px;
 }
 .colecciones img {
-  padding: 10px;
+  padding: 10px 0px;
   justify-self: center;
   align-self: center;
   width: 100%;
@@ -155,11 +159,13 @@ footer div a {
 
 .comprar {
   display: grid;
-  border-top: 1px dotted #68320e;
-  border-bottom: 1px dotted #68320e;
+  border-top: 1px dotted #f7d3e5;
+  border-bottom: 1px dotted #f7d3e5;
   color: #68320e;
   font-weight: 300;
   letter-spacing: 2px;
+  margin-bottom: 5px;
+  border-bottom: 2px dotted #68320e;
 }
 .comprar p {
   text-align: center;
@@ -178,16 +184,15 @@ footer div a {
   margin-bottom: 10px;
 }
 .comprar img {
-  width: fit-content;
-  height: 375px;
-  padding: 10px 30px;
+  width: auto;
+  height: fit-content;
+  padding-bottom: 10px;
   align-self: center;
   justify-self: center;
 }
 
 .about {
   display: grid;
-  background-color: #f7d3e5;
   padding: 15px;
   color: #68320e;
   font-weight: 300;
@@ -208,6 +213,57 @@ footer div a {
   color: #68320e;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .colecciones .ventana-variedad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  .colecciones .ventana-variedad .contenedor-img .hover {
+    display: none;
+  }
+  .colecciones .cookies-phone {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .colecciones .cookies-phone {
+    display: none;
+  }
+  .colecciones .ventana-variedad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  .colecciones .ventana-variedad .contenedor-img {
+    position: relative;
+    width: 100%;
+  }
+  .colecciones .ventana-variedad .contenedor-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+  }
+  .colecciones .ventana-variedad .contenedor-img .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  .colecciones .ventana-variedad .contenedor-img:hover .normal {
+    opacity: 0;
+  }
+  .colecciones .ventana-variedad .contenedor-img:hover .hover {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
