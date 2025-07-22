@@ -1,0 +1,34 @@
+.colecciones{
+    .ventana-variedad{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px;
+        .contenedor-img {
+            position: relative;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: opacity 0.4s ease;
+            }
+            .hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                z-index: 1;
+            }
+            &:hover {
+                .normal {
+                    opacity: 0;
+                    }
+                    .hover {
+                    opacity: 1;
+                    }
+                }
+            }
+    }
+}

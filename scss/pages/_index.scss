@@ -35,9 +35,9 @@
     color: $color-secundario;
     font-weight:300;
     letter-spacing: 2px;
-    margin-bottom: 5px;
     border-bottom: 2px dotted $color-secundario;
-    .ventana-variedad{
+    background-color: #f4df98;
+    .cookies-mq{
         display: none;
         }
     p{
@@ -63,9 +63,8 @@
         width: fit-content;
         background: transparent;
         justify-self: center;
-        padding: 5px;
-        border: 2px solid;
-        border-radius: 10%;    
+        padding: 5px 20px;
+        border: 2px solid; 
         color: $color-secundario;
         font-weight: 500;
         margin-bottom: 10px;
@@ -81,6 +80,7 @@
     letter-spacing: 2px;
     margin-bottom: 5px;
     border-bottom: 2px dotted $color-secundario;
+    background-color: #f5d2d6;
     p{
         text-align: center;
         padding: 15px;
@@ -90,9 +90,8 @@
         width: fit-content;
         background: transparent;
         justify-self: center;
-        padding: 5px;
-        border: 2px solid;
-        border-radius: 10%;    
+        padding: 5px 20px;
+        border: 2px solid;    
         color: $color-secundario;
         font-weight: 500;
         margin-bottom: 10px;
@@ -121,26 +120,23 @@
         width: fit-content;
         background: transparent;
         justify-self: center;
-        padding: 5px;
+        padding: 5px 20px;
         border: 2px solid;
-        border-radius: 10%;    
         color: $color-secundario;
         font-weight: 500;
         margin-bottom: 10px;
         }
 }
-
+// -----------------------------------------------------------------------------------------------
 @include mq-tablet{
     .colecciones{
-        .ventana-variedad{
+        .cookies-mq{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 15px;
             padding: 20px;
-            .contenedor-img{
-                .hover{display: none;
-                }
+            p{
+                align-self: center;
             }
         }
         .cookies-phone{
@@ -150,42 +146,12 @@
     }
 }
 
+//---------------------------------------------------------------------------------------------------------
+
 @include mq-desktop{
     .colecciones{
         .cookies-phone{
             display: none;
-        }
-    .ventana-variedad{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 15px;
-        padding: 20px;
-        .contenedor-img {
-            position: relative;
-            width: 100%;
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-                transition: opacity 0.4s ease;
-            }
-            .hover {
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                z-index: 1;
-            }
-            &:hover {
-                .normal {
-                    opacity: 0;
-                    }
-                    .hover {
-                    opacity: 1;
-                    }
-                }
-            }
         }    
     }
 }

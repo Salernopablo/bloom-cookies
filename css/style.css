@@ -26,7 +26,7 @@ img {
 }
 
 header {
-  background-color: #f7d3e5;
+  background-color: #f5d2d6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ header img {
   filter: drop-shadow(3px 2px 3px);
 }
 header nav ul, header a {
-  color: #68320e;
+  color: #97252b;
   display: flex;
   gap: 1rem;
   padding-top: 10px;
@@ -65,8 +65,8 @@ header .carrito {
 }
 
 footer div {
-  background-color: #68320e;
-  color: #f7d3e5;
+  background-color: #97252b;
+  color: #f5d2d6;
   display: grid;
 }
 footer div h4 {
@@ -74,13 +74,13 @@ footer div h4 {
   margin: 15px;
 }
 footer div a {
-  color: #ecbb6b;
+  color: #d3b96e;
   font-weight: bolder;
   font-style: italic;
   justify-self: center;
   margin: 10px;
   padding: 5px;
-  font-size: 20 px;
+  font-size: 40px;
 }
 
 .portada {
@@ -93,17 +93,17 @@ footer div a {
 .presentacion {
   display: grid;
   grid-template-rows: repeat(2 1fr);
-  color: #68320e;
+  color: #97252b;
   font-weight: 300;
   letter-spacing: 2px;
-  border-bottom: 2px dotted #68320e;
+  border-bottom: 2px dotted #97252b;
 }
 .presentacion h1 {
   justify-self: center;
   margin: 15px;
   padding: 20px;
   font-size: 35px;
-  color: #68320e;
+  color: #97252b;
 }
 .presentacion p {
   font-size: 15px;
@@ -117,13 +117,13 @@ footer div a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3 1fr);
-  color: #68320e;
+  color: #97252b;
   font-weight: 300;
   letter-spacing: 2px;
-  margin-bottom: 5px;
-  border-bottom: 2px dotted #68320e;
+  border-bottom: 2px dotted #97252b;
+  background-color: #f4df98;
 }
-.colecciones .ventana-variedad {
+.colecciones .cookies-mq {
   display: none;
 }
 .colecciones p {
@@ -132,7 +132,7 @@ footer div a {
   margin: 0px 20px;
 }
 .colecciones p a {
-  color: #68320e;
+  color: #97252b;
   font-weight: bolder;
   font-size: 17px;
 }
@@ -149,23 +149,23 @@ footer div a {
   width: fit-content;
   background: transparent;
   justify-self: center;
-  padding: 5px;
+  padding: 5px 20px;
   border: 2px solid;
-  border-radius: 10%;
-  color: #68320e;
+  color: #97252b;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .comprar {
   display: grid;
-  border-top: 1px dotted #f7d3e5;
-  border-bottom: 1px dotted #f7d3e5;
-  color: #68320e;
+  border-top: 1px dotted #f5d2d6;
+  border-bottom: 1px dotted #f5d2d6;
+  color: #97252b;
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 5px;
-  border-bottom: 2px dotted #68320e;
+  border-bottom: 2px dotted #97252b;
+  background-color: #f5d2d6;
 }
 .comprar p {
   text-align: center;
@@ -176,10 +176,9 @@ footer div a {
   width: fit-content;
   background: transparent;
   justify-self: center;
-  padding: 5px;
+  padding: 5px 20px;
   border: 2px solid;
-  border-radius: 10%;
-  color: #68320e;
+  color: #97252b;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -194,7 +193,7 @@ footer div a {
 .about {
   display: grid;
   padding: 15px;
-  color: #68320e;
+  color: #97252b;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -207,24 +206,22 @@ footer div a {
   width: fit-content;
   background: transparent;
   justify-self: center;
-  padding: 5px;
+  padding: 5px 20px;
   border: 2px solid;
-  border-radius: 10%;
-  color: #68320e;
+  color: #97252b;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  .colecciones .ventana-variedad {
+  .colecciones .cookies-mq {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 20px;
   }
-  .colecciones .ventana-variedad .contenedor-img .hover {
-    display: none;
+  .colecciones .cookies-mq p {
+    align-self: center;
   }
   .colecciones .cookies-phone {
     display: none;
@@ -234,36 +231,36 @@ footer div a {
   .colecciones .cookies-phone {
     display: none;
   }
-  .colecciones .ventana-variedad {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    padding: 20px;
-  }
-  .colecciones .ventana-variedad .contenedor-img {
-    position: relative;
-    width: 100%;
-  }
-  .colecciones .ventana-variedad .contenedor-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: opacity 0.4s ease;
-  }
-  .colecciones .ventana-variedad .contenedor-img .hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-  }
-  .colecciones .ventana-variedad .contenedor-img:hover .normal {
-    opacity: 0;
-  }
-  .colecciones .ventana-variedad .contenedor-img:hover .hover {
-    opacity: 1;
-  }
+}
+.colecciones .ventana-variedad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+.colecciones .ventana-variedad .contenedor-img {
+  position: relative;
+  width: 100%;
+}
+.colecciones .ventana-variedad .contenedor-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+.colecciones .ventana-variedad .contenedor-img .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.colecciones .ventana-variedad .contenedor-img:hover .normal {
+  opacity: 0;
+}
+.colecciones .ventana-variedad .contenedor-img:hover .hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
